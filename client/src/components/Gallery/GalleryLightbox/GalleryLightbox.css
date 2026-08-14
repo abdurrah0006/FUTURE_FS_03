@@ -1,0 +1,121 @@
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background: rgba(25, 17, 13, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+.gallery-lightbox-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  max-height: 90vh;
+}
+
+.gallery-lightbox-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 82vh;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+}
+
+.gallery-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.gallery-lightbox-close svg {
+  font-size: 1.2rem;
+}
+
+.gallery-lightbox-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-md) var(--radius-md);
+}
+
+.gallery-lightbox-caption span {
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+}
+
+.gallery-lightbox-arrow {
+  position: fixed;
+  top: 50%;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-white);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background var(--transition-fast);
+}
+
+.gallery-lightbox-arrow:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.gallery-lightbox-arrow svg {
+  font-size: 1.1rem;
+}
+
+.gallery-lightbox-prev {
+  left: 25px;
+}
+
+.gallery-lightbox-next {
+  right: 25px;
+}
+
+@media (max-width: 600px) {
+  .gallery-lightbox {
+    padding: 15px;
+  }
+
+  .gallery-lightbox-close {
+    top: 10px;
+    right: 10px;
+  width: 30px;
+  height: 30px;
+  }
+
+  .gallery-lightbox-arrow {
+    position: absolute;
+    top: auto;
+    bottom: -60px;
+    transform: none;
+  }
+
+  .gallery-lightbox-prev {
+    left: 25px;
+  }
+
+  .gallery-lightbox-next {
+    right: 25px;
+  }
+}

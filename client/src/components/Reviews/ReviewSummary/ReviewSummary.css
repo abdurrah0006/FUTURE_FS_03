@@ -1,0 +1,83 @@
+.review-summary {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 55px;
+  align-items: center;
+  max-width: 850px;
+  margin: 55px auto 0;
+  padding: 35px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+}
+
+.review-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.review-score strong {
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.review-score-stars {
+  display: flex;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.review-score-stars svg {
+  font-size: 0.85rem;
+}
+
+.review-score span {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+}
+
+.review-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.review-breakdown-row {
+  display: grid;
+  grid-template-columns: 12px 15px 1fr 35px;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-light);
+  font-size: 0.65rem;
+}
+
+.review-breakdown-row svg {
+  font-size: 0.7rem;
+}
+
+.review-progress {
+  height: 6px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+}
+
+.review-progress div {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-accent);
+}
+
+@media (max-width: 650px) {
+  .review-summary {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 28px;
+  }
+}

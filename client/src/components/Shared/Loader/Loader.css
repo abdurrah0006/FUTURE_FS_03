@@ -1,0 +1,25 @@
+.loader {
+  display: grid;
+  width: 100%;
+  min-height: 120px;
+  place-items: center;
+}
+
+.loader span {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(92, 61, 46, 0.15);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+.loader-fullscreen {
+  min-height: 100vh;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,60 @@
+.gallery-section {
+  background: var(--color-background);
+}
+
+.gallery-header {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-cta {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background: var(--color-background);
+}
+
+.gallery-cta-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 65px;
+  border-radius: var(--radius-xl);
+  background: var(--color-primary);
+}
+
+.gallery-cta-card .section-eyebrow {
+  color: #E7B57F;
+}
+
+.gallery-cta-card h2 {
+  margin-top: 5px;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.gallery-cta-card p {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+.gallery-cta-card .btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .gallery-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+  }
+
+  .gallery-cta-card .btn {
+    width: 100%;
+  }
+}

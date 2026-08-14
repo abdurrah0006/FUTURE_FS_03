@@ -1,0 +1,256 @@
+.site-footer {
+  color: var(--color-white);
+}
+
+.footer-main {
+  background: var(--color-primary);
+}
+
+.footer-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 50px;
+  padding: 75px 0 55px;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.footer-logo span {
+  color: #E7B57F;
+}
+
+.footer-brand p {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 9px;
+}
+
+.footer-socials a {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.75);
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.footer-socials a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  display: grid;
+  gap: 11px;
+}
+
+.footer-column li {
+  list-style: none;
+}
+
+.footer-column li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.76rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-column li a:hover {
+  color: var(--color-white);
+}
+
+.footer-column li svg {
+  font-size: 0.7rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-contact > a {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.73rem;
+  line-height: 1.5;
+  transition: color var(--transition-fast);
+}
+
+.footer-contact > a:hover {
+  color: var(--color-white);
+}
+
+.footer-contact svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #E7B57F;
+}
+
+.footer-hours {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-hours-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.footer-hours-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-hours-list span {
+  display: flex;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.68rem;
+}
+
+.footer-hours-list strong {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.footer-reservation {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: gap var(--transition-fast);
+}
+
+.footer-reservation:hover {
+  gap: 12px;
+}
+
+.footer-bottom {
+  background: #281913;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 65px;
+  gap: 20px;
+}
+
+.footer-bottom p,
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.65rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 3;
+    max-width: 420px;
+  }
+
+  .footer-hours {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+    padding: 55px 0 40px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-hours-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-bottom-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 0;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    gap: 10px 18px;
+  }
+}

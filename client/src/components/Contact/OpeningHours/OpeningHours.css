@@ -1,0 +1,67 @@
+.opening-hours {
+  padding: 35px;
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+}
+
+.opening-hours-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.opening-hours-icon {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-accent);
+}
+
+.opening-hours-icon svg {
+  font-size: 1.1rem;
+}
+
+.opening-hours-heading h3 {
+  margin-top: 3px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.opening-hours-list {
+  margin-top: 25px;
+}
+
+.opening-hours-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-light);
+  font-size: 0.7rem;
+}
+
+.opening-hours-row:last-child {
+  border-bottom: 0;
+}
+
+.opening-hours-row.is-today {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .opening-hours {
+    padding: 25px;
+  }
+
+  .opening-hours-row {
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,235 @@
+.menu-item-section {
+  padding-top: 130px;
+}
+
+.menu-item-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 45px;
+  color: var(--color-text-light);
+  font-size: 0.7rem;
+  transition: color var(--transition-fast);
+}
+
+.menu-item-back:hover {
+  color: var(--color-accent);
+}
+
+.menu-item-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.menu-item-image-wrapper {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-item-content {
+  max-width: 520px;
+}
+
+.menu-item-content h1 {
+  margin-top: 8px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.menu-item-description {
+  margin-top: 22px;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
+
+.menu-item-price {
+  margin-top: 25px;
+  color: var(--color-accent);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid var(--color-border);
+}
+
+.menu-item-detail {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--color-text-light);
+  font-size: 0.7rem;
+}
+
+.menu-item-detail svg {
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+
+.menu-item-actions {
+  margin-top: 30px;
+}
+
+.menu-item-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item-recommendations {
+  background: var(--color-surface);
+}
+
+.menu-item-recommendation-heading {
+  text-align: center;
+}
+
+.menu-item-recommendation-heading h2 {
+  margin-top: 7px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 600;
+}
+
+.menu-item-recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.menu-recommendation-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.menu-recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.menu-recommendation-image {
+  aspect-ratio: 1.2 / 1;
+  overflow: hidden;
+}
+
+.menu-recommendation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.menu-recommendation-card:hover img {
+  transform: scale(1.04);
+}
+
+.menu-recommendation-content {
+  padding: 20px;
+}
+
+.menu-recommendation-content > span {
+  color: var(--color-accent);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-recommendation-content h3 {
+  margin-top: 5px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.menu-recommendation-content p {
+  margin-top: 7px;
+  color: var(--color-text-light);
+  font-size: 0.68rem;
+  line-height: 1.6;
+}
+
+.menu-recommendation-content strong {
+  display: block;
+  margin-top: 12px;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+.menu-item-not-found {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-item-not-found h1 {
+  color: var(--color-primary);
+}
+
+.menu-item-not-found p {
+  margin: 10px 0 25px;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 900px) {
+  .menu-item-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .menu-item-content {
+    max-width: 700px;
+  }
+
+  .menu-item-recommendation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-item-section {
+    padding-top: 110px;
+  }
+
+  .menu-item-back {
+    margin-bottom: 25px;
+  }
+
+  .menu-item-recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

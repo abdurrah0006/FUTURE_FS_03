@@ -1,0 +1,297 @@
+
+.about-story {
+  background: var(--color-background);
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.about-story-image {
+  height: 560px;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-story-image:hover img {
+  transform: scale(1.03);
+}
+
+.about-story-content {
+  max-width: 560px;
+}
+
+.about-story-content p {
+  margin-top: 20px;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.about-values {
+  background: var(--color-surface);
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.about-value-card {
+  padding: 35px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-background);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.about-value-card:hover {
+  border-color: rgba(198, 139, 89, 0.35);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-6px);
+}
+
+.about-value-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 25px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(198, 139, 89, 0.12);
+  color: var(--color-accent);
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.about-value-icon svg {
+  font-size: 1.15rem;
+}
+
+.about-value-card:hover .about-value-icon {
+  background: rgba(198, 139, 89, 0.2);
+  transform: scale(1.08);
+}
+
+.about-value-card h3 {
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.about-value-card p {
+  margin-top: 12px;
+  color: var(--color-text-light);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+.coffee-philosophy {
+  background: var(--color-background);
+}
+
+.coffee-philosophy-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.coffee-philosophy-content {
+  max-width: 530px;
+}
+
+.coffee-philosophy-content p {
+  margin-top: 18px;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.coffee-philosophy-content .btn {
+  margin-top: 30px;
+}
+
+.coffee-philosophy-image {
+  height: 600px;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.coffee-philosophy-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.coffee-philosophy-image:hover img {
+  transform: scale(1.03);
+}
+
+.about-community {
+  background: var(--color-surface);
+}
+
+.about-community-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.about-community-image {
+  height: 540px;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.about-community-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.about-community-image:hover img {
+  transform: scale(1.03);
+}
+
+.about-community-content {
+  max-width: 550px;
+}
+
+.about-community-content p {
+  margin-top: 18px;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.about-cta {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: var(--color-background);
+}
+
+.about-cta-card {
+  position: relative;
+  overflow: hidden;
+  padding: 80px;
+  border-radius: var(--radius-xl);
+  background: var(--color-primary);
+  text-align: center;
+}
+
+.about-cta-card .section-eyebrow {
+  color: #E7B57F;
+}
+
+.about-cta-card h2 {
+  max-width: 750px;
+  margin: 0 auto;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.about-cta-card p {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+
+.btn-secondary {
+  border: 1px solid var(--color-white) !important;
+  background: transparent;
+  color: var(--color-white) !important;
+}
+
+@media (max-width: 900px) {
+  .about-story-grid,
+  .coffee-philosophy-grid,
+  .about-community-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-story-content,
+  .coffee-philosophy-content,
+  .about-community-content {
+    max-width: none;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-image,
+  .coffee-philosophy-image,
+  .about-community-image {
+    height: 450px;
+  }
+
+  .coffee-philosophy-content {
+    order: 2;
+  }
+
+  .coffee-philosophy-image {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-story-image,
+  .coffee-philosophy-image,
+  .about-community-image {
+    height: 350px;
+  }
+
+  .about-value-card {
+    padding: 28px;
+  }
+
+  .about-cta {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .about-cta-card {
+    padding: 55px 25px;
+  }
+
+  .about-cta-actions {
+    flex-direction: column;
+  }
+
+  .about-cta-actions .btn {
+    width: 100%;
+  }
+}
+

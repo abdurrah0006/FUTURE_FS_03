@@ -1,0 +1,91 @@
+.reservation-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 600px;
+  padding: 55px 40px;
+  text-align: center;
+}
+
+.reservation-success-icon {
+  display: grid;
+  width: 65px;
+  height: 65px;
+  place-items: center;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-accent);
+}
+
+.reservation-success-icon svg {
+  font-size: 1.5rem;
+  stroke-width: 2.5;
+}
+
+.reservation-success h2 {
+  margin-top: 7px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.reservation-success > p {
+  max-width: 450px;
+  margin-top: 10px;
+  color: var(--color-text-light);
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+.reservation-confirmation {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.reservation-confirmation > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 15px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  font-size: 0.68rem;
+}
+
+.reservation-confirmation svg {
+  color: var(--color-accent);
+}
+
+.reservation-success-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+  .reservation-success {
+    padding: 35px 20px;
+  }
+
+  .reservation-confirmation {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reservation-confirmation > div {
+    justify-content: center;
+  }
+
+  .reservation-success-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reservation-success-actions .btn {
+    width: 100%;
+  }
+}

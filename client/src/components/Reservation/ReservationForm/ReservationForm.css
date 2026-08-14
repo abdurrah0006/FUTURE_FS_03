@@ -1,0 +1,107 @@
+.reservation-form {
+  padding: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.reservation-form-heading h2 {
+  margin-top: 6px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reservation-form-heading p {
+  margin-top: 7px;
+  color: var(--color-text-light);
+  font-size: 0.72rem;
+}
+
+.reservation-form-section {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid var(--color-border);
+}
+
+.reservation-form-section h3 {
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.reservation-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.reservation-form .form-field {
+  margin-top: 18px;
+}
+
+.reservation-form .form-field label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.reservation-form .form-field label svg {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.72rem;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(180, 112, 62, 0.08);
+}
+
+.reservation-form textarea {
+  resize: vertical;
+}
+
+.reservation-submit {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.reservation-form-note {
+  margin-top: 12px;
+  color: var(--color-text-muted);
+  font-size: 0.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .reservation-form {
+    padding: 25px;
+  }
+
+  .reservation-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
