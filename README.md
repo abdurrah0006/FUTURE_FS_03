@@ -368,27 +368,27 @@ The website will then be available through the local Vite development server.
 
 ### 🏠 Home
 
-![Home Page](image/home.jpg)
+![Home Page](image/Hero.png)
 
 ### 🔮 About
 
-![About Page](image/about.jpg)
+![About Page](image/About.png)
 
 ### ☕ Menu
 
-![Menu Page](image/menu.jpg)
-
-### 📖 Menu Item
-
-![Menu Item Page](image/menuitem.jpg)
+![Menu Page](image/Menu.png)
 
 ### 🖼️ Gallery
 
-![Gallery Page](image/gallery.jpg)
+![Gallery Page](image/Gallery.png)
+
+### 📞 Contact
+
+![Contact Page](image/Contact.png)
 
 ### ⭐ Reviews
 
-![Review Page](image/review.jpg)
+![Review Page](image/Reviews.png)
 
 ---
 
